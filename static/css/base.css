@@ -1,0 +1,105 @@
+scroll-view,
+swiper,
+swiper-item,
+view,
+text,
+input,
+textarea{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-size: 32upx;
+	box-sizing: border-box;
+}
+
+/*全局容器*/
+.container{
+	height: 100vh;
+}
+
+/* #ifdef H5 */
+.container{
+	height: calc(100vh - 100upx);
+}
+/* #endif */
+
+/*flex布局*/
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/*文字省略*/
+.text-ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/*状态栏*/
+.status_bar{
+	color: #000;
+	height: var(--status-bar-height);
+	background-color: #fff;
+}
+
+/*间隔*/
+.space{
+	height: 20upx;
+	background-color: #F7F7F7;
+}
+
+/*NAV*/
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 88upx;
+	padding: 0 30upx;
+	background-color: #fff;
+}
+.header .left,
+.header .right{
+	width: 220upx;
+}
+.header .center{
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: calc(100% - 440upx);
+}
+.header .right{
+	text-align: right;
+}
+.header .nav-title{
+	font-size: 32upx;
+}
+
+/* 头部*/
+.head{
+	height: 100upx;
+	padding: 0 40upx;
+}
+.head .title {
+	color: #000;
+	font-size: 48upx;
+	font-weight: bold;
+}
+.head .icon {
+	width: 40upx;
+	height: 40upx;
+	margin-right: 6upx;
+}
+.head .text {
+	color: #333;
+	font-size: 32upx;
+}
